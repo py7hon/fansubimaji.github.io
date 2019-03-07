@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body style="background-color:#303d4b;">
+        <nav class="navbar navbar-dark navbar-expand-md" style="background-color:#375a7f;font-size:17px;font-family:'Open Sans', sans-serif;max-width:100%;margin:auto;height:60px;margin-bottom:30px;">
+            <div class="container"><a class="navbar-brand" href="localhost:4000">FI</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1" style="background-color:transparent;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon" style="font-size:18px;padding-bottom:5px;"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1" style="font-family:'Open Sans', sans-serif;margin-left:15px;background-color:#375a7f;padding-left:10px;width:auto;">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#" style="color:#ffffff;">Releases</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:#ffffff;">Staff</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:#ffffff;">RSS</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="https://www.facebook.com/FansubImaji" style="color:#ffffff;">FB</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="https://discord.gg/d5nfWcE" style="color:#ffffff;">Discord</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        {% for post in site.posts %}
+            <div class="media" style="background-color:#34495e;color:#fdfdfe;max-width:900px;margin:auto;margin-bottom:5px;"><img style="padding-right: 10px" src="{{ post.thumb }}" width="110px">
+                <div class="media-body" style="padding-top:10px;">
+                    <a href="{{ post.url }}" style="font-size:17px;color:#ffffff;margin-top:10px;font-family:'Open Sans', sans-serif;">{{ post.title }}</a>
+                    <p style="max-width:500px;padding-left:0;font-size:14px;">by {{post.author}} - {{ post.date | date: "%d %m %Y" }}</p>
+                </div>
+            </div>
+        {% endfor %}
+
+        {% include footer.html %}
+
+  </body>
+</html>
