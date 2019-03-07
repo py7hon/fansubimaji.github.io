@@ -1,0 +1,10 @@
+title: Fansub Imaji
+author: imajisubs
+description: Bukan Fansub Basa-Basi
+url: "http://fansubimaji.github.io"
+permalink: /:title
+
+timezone: Asia/Jakarta
+
+markdown: kramdown
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
