@@ -20,7 +20,7 @@
             <div class="media" style="background-color:#34495e;color:#fdfdfe;max-width:900px;margin:auto;margin-bottom:5px;"><img style="padding-right: 10px" src="{{ post.thumb }}" width="110px">
                 <div class="media-body" style="padding-top:10px;">
                     <a href="{{ post.url }}" style="font-size:17px;color:#ffffff;margin-top:10px;font-family:'Open Sans', sans-serif;">{{ post.title }}</a>
-                    <p style="max-width:500px;padding-left:0;font-size:14px;">by {{post.author}} - {{ post.date | date: "%d %m %Y" }}</p>
+                    <p style="max-width:500px;padding-left:0;font-size:14px;">by {{post.author}} - {{ page.date | date_to_long_string }}</p>
                 </div>
             </div>
         {% endfor %}
