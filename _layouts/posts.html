@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body style="background-color:#303d4b;">
+        <nav class="navbar navbar-dark navbar-expand-md" style="background-color:#375a7f;font-size:17px;font-family:'Open Sans', sans-serif;max-width:100%;margin:auto;height:60px;margin-bottom:30px;">
+            <div class="container"><a class="navbar-brand" href="localhost:4000">FI</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1" style="background-color:transparent;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon" style="font-size:18px;padding-bottom:5px;"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1" style="font-family:'Open Sans', sans-serif;margin-left:15px;background-color:#375a7f;padding-left:10px;width:auto;">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="{{ site.url }}" style="color:#ffffff;">Releases</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:#ffffff;">Staff</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:#ffffff;">RSS</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="https://www.facebook.com/FansubImaji" style="color:#ffffff;">FB</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="https://discord.gg/d5nfWcE" style="color:#ffffff;">Discord</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container" style="max-width:900px;margin:auto;background-color:#34495e;color:#ffffff;font-family:'Open Sans', sans-serif;">
+            <div class="jumbotron" style="background-color:transparent;padding:10px;margin-bottom:3px;padding-bottom:8px;">
+                <h3>{{ page.title }}</h3>
+                <p>By {{ page.author }} - {{ page.date | date: "%d %m %Y" }}<br></p>
+                <hr style="background-color:#e8e4e4;">
+            </div>
+            <div class="container" style="max-width:900px;margin:auto;background-color:#34495e;color:#ffffff;font-family:'Open Sans', sans-serif;">
+                <div class="jumbotron" style="background-color:transparent;padding:1px;padding-bottom:6px;">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+
+        {% include footer.html %}
+    </body>
+</html>
