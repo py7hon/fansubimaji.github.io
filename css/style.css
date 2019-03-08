@@ -1,1 +1,7 @@
-
+#media-thumb{
+    background-color: #34495e;
+    color: #fdfdfe;
+    max-width :900px;
+    margin: auto;
+    margin-bottom: 5px;
+}
