@@ -2,15 +2,22 @@
 <html lang="en">
   {% include head.html %}
   <body style="background-color:#303d4b;">
-        {% include header.html %}
-        <div class="container" style="max-width:900px;margin:auto;background-color:#34495e;color:#ffffff;font-family:'Open Sans', sans-serif;">
-            <div class="jumbotron" style="background-color:transparent;padding:20px 7px 20px 7px;margin-bottom:3px;">
+    {% include header.html %}
+        <div class="container" style="max-width:900px;margin:auto;background-color:#34495e;color:#ffffff;font-family:'Open Sans', sans-serif;margin-bottom:9px;">
+            <div class="jumbotron" style="background-color:transparent;padding:20px 7px 20px 7px;margin-bottom:3px;font-size:16px;">
                 <h3>{{ page.title }}</h3>
-                <p>By {{ page.author }} - {{ page.date | date_to_long_string }}<br></p>
+                <p>By {{ page.author }} - {{ page.date | date_to_long_string }} &nbsp; Rilisan: <a href="/rilisan/{{ page.category }}">{{ page.category }}</a><br></p>
                 <hr style="background-color:#e8e4e4;">
-                    {{ content }}
-                <hr style="background-color:#e8e4e4;margin-top:15%;">
-                    {% include disqus.html %}
+                        <center><img src="{{ page.thumb }}" width="80%" style="height:auto;"></center><br>
+                        {{ content }}
+                        <center>
+                            {% for dl in page.download %}
+                                <a href="{{ dl.tautan }}" target="_blank"><button class="btn btn-primary" style="font-size:14px"><i class="fab fa-google-drive"></i> {{ dl.reso }}</button></a>&nbsp;
+                            {% endfor %}
+                        </center>
+                        {% include share-button.html %}
+                <hr style="background-color:#e8e4e4;margin-top:2%;">
+              {% include disqus.html %}
             </div>
         </div>
         {% include footer.html %}
