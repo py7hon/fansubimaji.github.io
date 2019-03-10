@@ -19,7 +19,7 @@
         <div class="container" style="max-width:900px;margin:auto;background-color:#34495e;color:#ffffff;font-family:'Open Sans', sans-serif;">
             <div class="jumbotron" style="background-color:transparent;padding:20px 7px 20px 7px;margin-bottom:3px;">
                 <h3>{{ page.title }}</h3>
-                <p>By {{ page.author }} - {{ page.date | date: "%d %m %Y" }}<br></p>
+                <p>By {{ page.author }} - {{ page.date | date_to_long_string }}<br></p>
                 <hr style="background-color:#e8e4e4;">
                     {{ content }}
                 <hr style="background-color:#e8e4e4;margin-top:10%;">
