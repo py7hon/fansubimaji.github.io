@@ -2,16 +2,25 @@
 <html lang="en">
   {% include head.html %}
   <body style="background-color:#303d4b;">
-        {% include header.html %}
+    {% include header.html %}
         {% for post in site.posts %}
-            <div class="media" style="background-color:#34495e;color:#fdfdfe;max-width:900px;margin:auto;margin-bottom:5px;"><img style="padding-right: 10px" src="{{ post.thumb }}" width="110px">
+            {% if post.type == "tv" %}
+            <div class="media" style="background-color:#34495e;color:#fdfdfe;max-width:900px;margin:auto;margin-bottom:3px;"><img style="padding-right: 16px" src="{{ site.tv_thumb }}" width="100px">
+            {% elsif post.type == "movie" %}
+            <div class="media" style="background-color:#34495e;color:#fdfdfe;max-width:900px;margin:auto;margin-bottom:3px;"><img style="padding-right: 16px" src="{{ site.movie_thumb }}" width="100px">
+            {% elsif post.type == "bd" %}
+            <div class="media" style="background-color:#34495e;color:#fdfdfe;max-width:900px;margin:auto;margin-bottom:3px;"><img style="padding-right: 16px" src="{{ site.bd_thumb }}" width="100px">
+            {% else %}
+            <div class="media" style="background-color:#34495e;color:#fdfdfe;max-width:900px;margin:auto;margin-bottom:3px;"><img style="padding-right: 16px" src="{{ site.not_thumb }}" width="100px">
+            {% endif %}
                 <div class="media-body" style="padding-top:10px;">
                     <a href="{{ post.url }}" style="font-size:17px;color:#ffffff;margin-top:10px;font-family:'Open Sans', sans-serif;">{{ post.title }}</a>
                     <p style="max-width:500px;padding-left:0;font-size:14px;">by {{post.author}} - {{ post.date | date_to_long_string }}</p>
                 </div>
             </div>
         {% endfor %}
-    
+
         {% include footer.html %}
+
   </body>
 </html>
