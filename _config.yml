@@ -5,6 +5,12 @@ description: Bukan Fansub Basa-Basi
 url: "https://fansubimaji.github.io"
 permalink: /:title
 
+# post settings
+tv_thumb: ""
+movie_thumb: ""
+bd_thumb: ""
+not_thumb: "https://raw.githubusercontent.com/fansubimaji/fansubimaji.github.io/master/img/404_thumb.png"
+
 # others
 timezone: Asia/Jakarta
 markdown: kramdown
