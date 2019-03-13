@@ -16,7 +16,12 @@ timezone: Asia/Jakarta
 markdown: kramdown
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
 
+# pagination
+paginate: 8
+paginate_path: "/page:num/"
+
 # plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-paginate
