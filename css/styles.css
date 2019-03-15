@@ -1,0 +1,19 @@
+#media-thumb{
+    background-color: #34495e;
+    color: #fdfdfe;
+    max-width :900px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+a{
+    color: #d3d3d3;
+    text-decoration: none;
+}
+a:hover{
+   color: #436ae7;
+   transition: 0.3s all;
+   text-decoration: none;
+}
+footer{
+   margin-top: 27px;
+}
