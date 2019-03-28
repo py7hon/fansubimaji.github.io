@@ -15,6 +15,7 @@ not_thumb: "https://raw.githubusercontent.com/fansubimaji/fansubimaji.github.io/
 timezone: Asia/Jakarta
 markdown: kramdown
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
+naotimes_discordid: "520097294213971983"
 
 # pagination
 paginate: 11
