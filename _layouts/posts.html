@@ -8,7 +8,7 @@
                 <h3>{{ page.title }}</h3>
                 <p>By {{ page.author }} - {{ page.date | date_to_long_string }}<br></p>
                 <hr style="background-color:#e8e4e4;">
-                        <center><img src="{{ page.thumb }}" width="80%" style="height:auto;"></center><br>
+                        <center><img src="{{ page.image }}" width="80%" style="height:auto;"></center><br>
                         {{ content }}
                         <center>
                             {% for dl in page.download %}
