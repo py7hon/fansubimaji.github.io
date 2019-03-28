@@ -5,7 +5,7 @@ title: Domestic na Kanojo - 01 (Uncut)
 date: 2019-03-28T12:59:00Z
 type: tv
 comments: true
-thumb: "https://raw.githubusercontent.com/fansubimaji/fansubimaji.github.io/master/g/domekano-01-uncut.jpg"
+image: "https://raw.githubusercontent.com/fansubimaji/fansubimaji.github.io/master/g/domekano-01-uncut.jpg"
 download:
     - tautan: https://www.perpusindo.info/berkas/Dk84uQPC
       reso: 720p
