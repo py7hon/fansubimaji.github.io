@@ -4,6 +4,7 @@ author: imajisubs
 description: Bukan Fansub Basa-Basi
 url: "https://fansubimaji.web.id"
 permalink: /:title
+github: fansubimaji
 
 # post settings
 tv_thumb: "https://raw.githubusercontent.com/fansubimaji/fansubimaji.github.io/master/img/tv_thumb.png"
