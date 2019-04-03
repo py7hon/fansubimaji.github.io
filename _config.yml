@@ -7,10 +7,10 @@ permalink: /:title
 github: fansubimaji
 
 # post settings
-tv_thumb: "https://raw.githubusercontent.com/fansubimaji/fansubimaji.github.io/master/img/tv_thumb.png"
-movie_thumb: "https://raw.githubusercontent.com/fansubimaji/fansubimaji.github.io/master/img/movie_thumb.png"
-bd_thumb: "https://raw.githubusercontent.com/fansubimaji/fansubimaji.github.io/master/img/bd_thumb.png"
-not_thumb: "https://raw.githubusercontent.com/fansubimaji/fansubimaji.github.io/master/img/404_thumb.png"
+tv_thumb: "https://raw.githubusercontent.com/fansubimaji/fansubimaji.github.io/master/assets/img/tv_thumb.png"
+movie_thumb: "https://raw.githubusercontent.com/fansubimaji/fansubimaji.github.io/master/assets/img/movie_thumb.png"
+bd_thumb: "https://raw.githubusercontent.com/fansubimaji/fansubimaji.github.io/master/assets/img/bd_thumb.png"
+not_thumb: "https://raw.githubusercontent.com/fansubimaji/fansubimaji.github.io/master/assets/img/404_thumb.png"
 
 # others
 timezone: Asia/Jakarta
