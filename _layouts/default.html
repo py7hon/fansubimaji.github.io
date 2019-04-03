@@ -6,7 +6,7 @@
         {% for post in site.posts %}
             {% if post.type == "tv" %}
             <div class="media" style="background-color:#34495e;color:#fdfdfe;max-width:900px;margin:auto;margin-bottom:3px;"><img style="padding-right: 16px" src="{{ site.tv_thumb }}" width="100px">
-            {% elsif post.type == "movie" %}
+            {% elseif post.type == "movie" %}
             <div class="media" style="background-color:#34495e;color:#fdfdfe;max-width:900px;margin:auto;margin-bottom:3px;"><img style="padding-right: 16px" src="{{ site.movie_thumb }}" width="100px">
             {% elsif post.type == "bd" %}
             <div class="media" style="background-color:#34495e;color:#fdfdfe;max-width:900px;margin:auto;margin-bottom:3px;"><img style="padding-right: 16px" src="{{ site.bd_thumb }}" width="100px">
