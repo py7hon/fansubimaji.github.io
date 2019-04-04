@@ -7,16 +7,16 @@ permalink: /:title
 github: fansubimaji
 
 # post settings
-tv_thumb: "https://raw.githubusercontent.com/fansubimaji/fansubimaji.github.io/master/img/tv_thumb.png"
-movie_thumb: "https://raw.githubusercontent.com/fansubimaji/fansubimaji.github.io/master/img/movie_thumb.png"
-bd_thumb: "https://raw.githubusercontent.com/fansubimaji/fansubimaji.github.io/master/img/bd_thumb.png"
-not_thumb: "https://raw.githubusercontent.com/fansubimaji/fansubimaji.github.io/master/img/404_thumb.png"
+tv_thumb: "https://raw.githubusercontent.com/fansubimaji/fansubimaji.github.io/master/assets/img/tv_thumb.png"
+movie_thumb: "https://raw.githubusercontent.com/fansubimaji/fansubimaji.github.io/master/assets/img/movie_thumb.png"
+bd_thumb: "https://raw.githubusercontent.com/fansubimaji/fansubimaji.github.io/master/assets/img/bd_thumb.png"
+not_thumb: "https://raw.githubusercontent.com/fansubimaji/fansubimaji.github.io/master/assets/img/404_thumb.png"
 
 # others
 timezone: Asia/Jakarta
 markdown: kramdown
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
-# naotimes_discordid: "520097294213971983"
+naotimes_discordid: "520097294213971983"
 
 # pagination
 paginate: 11
@@ -27,3 +27,5 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-paginate
+
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, .gitignore, _site, src, vendor, CNAME, LICENSE, Rakefile, runserver.bat, runserverdrafts.bat]

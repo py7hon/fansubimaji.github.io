@@ -15,7 +15,7 @@ function naoTimesProcess(disID) {
 	.then(nT_resolve_status)
 	.then(nT_json_data)
 	.then(function(nT_data) {
-		var div_data = document.getElementById("progress");
+		var div_data = document.getElementById("naotimes-progress");
 		var json_data = JSON.parse(nT_data['files']['nao_showtimes.json']['content'])
 		var dis_data = json_data[disID];
 		var available_anime = [];
